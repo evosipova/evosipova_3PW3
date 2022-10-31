@@ -13,7 +13,7 @@ extension ColorPaletteView {
         private let colorLabel = UILabel()
         
         private(set) var value: Float
-            
+        
         init(colorName: String, value: Float) {
             self.value = value
             super.init(frame: .zero)

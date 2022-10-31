@@ -45,7 +45,7 @@ final class ColorPaletteView: UIControl {
         [redControl, greenControl, blueControl].forEach {
             $0.addTarget(self, action: #selector(sliderMoved(slider:)),for: .touchDragInside)
         }
- 
+        
         addSubview(stackView)
         stackView.pin(to: self)
     }
@@ -53,27 +53,27 @@ final class ColorPaletteView: UIControl {
     @objc
     private func sliderMoved(slider: ColorSliderView) {
         switch slider.tag {
-            case 0:
-                self.chosenColor = UIColor(
-                    red: CGFloat(slider.value),
-                    green: chosenColor.rgba.green,
-                    blue: chosenColor.rgba.blue,
-                    alpha: chosenColor.rgba.alpha
-                )
-            case 1:
-                self.chosenColor = UIColor(
-                    red: chosenColor.rgba.red,
-                    green: CGFloat(slider.value),
-                    blue: chosenColor.rgba.blue,
-                    alpha: chosenColor.rgba.alpha
-                )
-            default:
-                self.chosenColor = UIColor(
-                    red: chosenColor.rgba.red,
-                    green: chosenColor.rgba.green,
-                    blue: CGFloat(slider.value),
-                    alpha: chosenColor.rgba.alpha
-                )
+        case 0:
+            self.chosenColor = UIColor(
+                red: CGFloat(slider.value),
+                green: chosenColor.rgba.green,
+                blue: chosenColor.rgba.blue,
+                alpha: chosenColor.rgba.alpha
+            )
+        case 1:
+            self.chosenColor = UIColor(
+                red: chosenColor.rgba.red,
+                green: CGFloat(slider.value),
+                blue: chosenColor.rgba.blue,
+                alpha: chosenColor.rgba.alpha
+            )
+        default:
+            self.chosenColor = UIColor(
+                red: chosenColor.rgba.red,
+                green: chosenColor.rgba.green,
+                blue: CGFloat(slider.value),
+                alpha: chosenColor.rgba.alpha
+            )
         }
         
         sendActions(for: .touchDragInside)
