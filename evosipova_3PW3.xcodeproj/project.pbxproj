@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55A148582921AF260015A329 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A148572921AF260015A329 /* NotesViewController.swift */; };
+		55A1485B2921B1AD0015A329 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1485A2921B1AD0015A329 /* AddNoteCell.swift */; };
 		55D59635290D62750053B16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D59634290D62750053B16B /* AppDelegate.swift */; };
 		55D59637290D62750053B16B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D59636290D62750053B16B /* SceneDelegate.swift */; };
 		55D59639290D62750053B16B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D59638290D62750053B16B /* WelcomeViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55A148572921AF260015A329 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		55A1485A2921B1AD0015A329 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		55D59631290D62750053B16B /* evosipova_3PW3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evosipova_3PW3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D59634290D62750053B16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D59636290D62750053B16B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55A148592921B1740015A329 /*  Notes */ = {
+			isa = PBXGroup;
+			children = (
+				55A148572921AF260015A329 /* NotesViewController.swift */,
+				55A1485A2921B1AD0015A329 /* AddNoteCell.swift */,
+			);
+			path = " Notes";
+			sourceTree = "<group>";
+		};
 		55D59628290D62750053B16B = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +77,7 @@
 				55D59636290D62750053B16B /* SceneDelegate.swift */,
 				55D5964D290D64A60053B16B /* View */,
 				55D59648290D62830053B16B /* Controller */,
+				55A148592921B1740015A329 /*  Notes */,
 				55D5963D290D62770053B16B /* Assets.xcassets */,
 				55D59642290D62770053B16B /* Info.plist */,
 			);
@@ -162,8 +176,10 @@
 				55D59655290DA6190053B16B /* UIColorExtension.swift in Sources */,
 				55D59651290D64E30053B16B /* UIView+Pin.swift in Sources */,
 				55D59639290D62750053B16B /* WelcomeViewController.swift in Sources */,
+				55A148582921AF260015A329 /* NotesViewController.swift in Sources */,
 				55D59635290D62750053B16B /* AppDelegate.swift in Sources */,
 				55D5964C290D637E0053B16B /* ColorPaletteView.swift in Sources */,
+				55A1485B2921B1AD0015A329 /* AddNoteCell.swift in Sources */,
 				55D59637290D62750053B16B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

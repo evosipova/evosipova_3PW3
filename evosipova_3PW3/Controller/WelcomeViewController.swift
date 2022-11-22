@@ -18,6 +18,7 @@ final class WelcomeViewController: UIViewController {
     let colorPaletteView = ColorPaletteView()
     private var buttonsSV = UIStackView()
     
+    private let notesViewController = NotesViewController()
     
     private func setupIncrementButton() {
         incrementButton.setTitle("Increment", for: .normal)
@@ -129,6 +130,8 @@ final class WelcomeViewController: UIViewController {
         buttonsSV.pinBottom(to: self.view.safeAreaLayoutGuide.bottomAnchor, 24)
         colorsButton.addTarget(self, action:
                                 #selector(paletteButtonPressed), for: .touchUpInside)
+        
+        notesButton.addTarget(self, action: #selector(notesButtonPressed), for: .touchUpInside)
     }
     
     @discardableResult
@@ -206,6 +209,14 @@ final class WelcomeViewController: UIViewController {
             }
         });
         
+    }
+    
+    @objc
+    private func notesButtonPressed() {
+        let navigation = UINavigationController(rootViewController: notesViewController)
+        present(navigation, animated: true)
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
     }
 }
 
